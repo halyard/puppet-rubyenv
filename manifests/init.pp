@@ -9,7 +9,9 @@ class rubyenv {
   ruby::version { '2.1.0': }
   ruby::version { '2.1.1': }
   ruby::version { '2.1.2': }
+  ruby::version { '2.1.3': }
+  ruby::version { '2.1.4': }
   class { 'ruby::global':
-    version => '2.1.2'
+    version => '2.1.4'
   }
 }
