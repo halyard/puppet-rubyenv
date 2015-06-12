@@ -9,4 +9,9 @@ class rubyenv(
   class { 'ruby::global':
     version => $default
   }
+
+  ruby_gem { 'bundler for all rubies':
+    gem          => 'bundler',
+    ruby_version => '*'
+  }
 }
