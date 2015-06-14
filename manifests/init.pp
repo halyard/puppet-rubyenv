@@ -15,8 +15,8 @@ class rubyenv(
     ruby_version => '*'
   }
 
-  Ruby_gem <| |> ->
-  file { "${::boxen_user}/.rbenv":
+  Ruby_gem <| |> ~>
+  file { "/Users/${::boxen_user}/.rbenv":
     ensure => 'absent',
     force  => true
   }
