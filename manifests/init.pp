@@ -1,6 +1,6 @@
 class rubyenv(
-  $versions = ['2.2.2', '2.1.6'],
-  $default = '2.2.2',
+  $versions = ['2.2.3', '2.2.2', '2.1.6'],
+  $default = '2.2.3',
 ) {
   include ruby
 
