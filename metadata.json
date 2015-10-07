@@ -1,0 +1,22 @@
+{
+  "name": "halyard-rubyenv",
+  "version": "0.0.12",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure ruby environment via Boxen",
+  "source": "https://github.com/halyard/puppet-rubyenv",
+  "project_page": "https://github.com/halyard/puppet-rubyenv",
+  "issues_url": "https://github.com/halyard/puppet-rubyenv/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemmajrelease": [
+        "14",
+        "15"
+      ]
+    }
+  ]
+}
