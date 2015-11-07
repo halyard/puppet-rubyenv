@@ -21,4 +21,9 @@ class rubyenv(
     ensure => 'absent',
     force  => true
   }
+
+  file { ['/usr/local/bin/bundler', '/usr/local/bin/bundle']:
+    ensure  => absent,
+    require => Ruby_gem['bundler for all rubies']
+  }
 }
