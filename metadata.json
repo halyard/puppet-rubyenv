@@ -8,7 +8,10 @@
   "project_page": "https://github.com/halyard/puppet-rubyenv",
   "issues_url": "https://github.com/halyard/puppet-rubyenv/issues",
   "dependencies": [
-
+    {
+      "name": "halyard/ruby",
+      "version_requirement": "8.5.x"
+    }
   ],
   "operatingsystem_support": [
     {
