@@ -1,7 +1,7 @@
 # Configure Ruby environment for system
 class rubyenv(
-  $versions = ['2.2.3', '2.2.2', '2.1.6'],
-  $default = '2.2.3',
+  $versions = ['2.2.4', '2.0.0-p648', '1.9.3-p551'],
+  $default = '2.2.4',
 ) {
   include ruby
 
