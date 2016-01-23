@@ -2,6 +2,7 @@
 class rubyenv(
   $versions = ['2.3.0', '2.2.4', '2.0.0-p648', '1.9.3-p551'],
   $default = '2.3.0',
+  $gems = [],
 ) {
   include ruby
 
@@ -14,6 +15,13 @@ class rubyenv(
   ruby_gem { 'bundler for all rubies':
     gem          => 'bundler',
     ruby_version => '*'
+  }
+
+  $gems.each |$gem| {
+    ruby_gem { "${gem} for all rubies":
+      gem          => $gem,
+      ruby_version => '*'
+    }
   }
 
   Ruby_gem <| |> ~>
