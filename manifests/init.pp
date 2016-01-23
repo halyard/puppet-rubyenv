@@ -2,8 +2,9 @@
 class rubyenv(
   $versions = ['2.3.0', '2.2.4', '2.0.0-p648', '1.9.3-p551'],
   $default = '2.3.0',
-  $gems = [],
 ) {
+  $gems = hiera_array('rubyenv::gems', [])
+
   include ruby
 
   ruby::version { $versions: }
